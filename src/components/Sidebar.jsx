@@ -1,6 +1,10 @@
 import { Box } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
 
 function Sidebar() {
+  const theme = useTheme();
+  console.log(theme);
+
   return (
     <Box
       bgcolor="gainsboro"
