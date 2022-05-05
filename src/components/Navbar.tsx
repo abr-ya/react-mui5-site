@@ -14,7 +14,7 @@ function Navbar() {
           <InputBase placeholder="search..." />
         </Search>
         <Icons>
-          <Badge badgeContent={4} color="secondary">
+          <Badge badgeContent={4} color="error">
             <Mail color="action" />
           </Badge>
           <Badge badgeContent={2} color="error">
