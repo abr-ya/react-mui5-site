@@ -67,7 +67,7 @@ function Rightbar() {
       sx={{ display: { xs: "none", sm: "block" } }}
     >
       <Box width={300}>
-        <Typography variant="h5" fontWeight={100}>
+        <Typography variant="h5">
           Online Friends
         </Typography>
         <AvatarGroup max={4}>
@@ -78,7 +78,7 @@ function Rightbar() {
           <Avatar alt="Trevor Henderson" src={`${baseUrl}avatar/5.jpg`} />
         </AvatarGroup>
         {/* Photo Gallery */}
-        <Typography variant="h5" fontWeight={100} mt={2} mb={2}>
+        <Typography variant="h5" mt={2} mb={2}>
           Photo Gallery
         </Typography>
         {/* todo try variant="masonry"  */}

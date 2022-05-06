@@ -18,48 +18,50 @@ const Sidebar = ({ toggleMode }: ISidebar) => {
       p={2}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#home">
-            <ListItemIcon>
-              <Home />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#simple-list">
-            <ListItemIcon>
-              <Article />
-            </ListItemIcon>
-            <ListItemText primary="Pages" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <Inbox />
-            </ListItemIcon>
-            <ListItemText primary="Inbox" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <Drafts />
-            </ListItemIcon>
-            <ListItemText primary="Drafts" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+      <Box position="fixed" >
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <ModeNight />
+                <Home />
               </ListItemIcon>
-              <Switch onChange={toggleMode}/>
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
-      </List>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#simple-list">
+              <ListItemIcon>
+                <Article />
+              </ListItemIcon>
+              <ListItemText primary="Pages" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Inbox />
+              </ListItemIcon>
+              <ListItemText primary="Inbox" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <Drafts />
+              </ListItemIcon>
+              <ListItemText primary="Drafts" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+              <ListItemButton component="a" href="#simple-list">
+                <ListItemIcon>
+                  <ModeNight />
+                </ListItemIcon>
+                <Switch onChange={toggleMode}/>
+              </ListItemButton>
+            </ListItem>
+        </List>
+      </Box>
     </Box>
   )
 }
